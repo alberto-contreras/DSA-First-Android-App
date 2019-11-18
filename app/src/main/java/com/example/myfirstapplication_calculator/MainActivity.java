@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 compute(); //Function that calculate or assign the value if val1 or val2 don't have
                 ACTION = ADDITION; // Value of the action
-                result.setText(String.valueOf(val1) + "+"); // in the tv we assign the full operation
+                result.setText(String.valueOf(val1) + "+"); // in the tvresult we assign the full operation
                 info.setText(null);
             }
         });
@@ -187,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
         cln = (Button)findViewById(R.id.btncl);
         info = (TextView)findViewById(R.id.tvControl);
         result = (TextView)findViewById(R.id.tvResult);
+        equ = (Button) findViewById(R.id.btneq);
 
     }
     private void compute(){ //Function that calculates
